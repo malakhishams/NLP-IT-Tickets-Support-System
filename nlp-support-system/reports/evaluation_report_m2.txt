@@ -1,0 +1,42 @@
+A. RNN Limitations and Vanishing Gradient Problem
+====================================================
+-> RNN Accuracy = 62%
+-> LSTM Accuracy = 83%
+Why the RNN underperformed:
+RNN struggled with long support tickets because of the vanishing 
+gradient problem. During backpropagation, gradients shrink exponentially 
+as they go back through many time steps. This means the RNN effectively 
+forgets words that appeared early in the ticket by the time it reaches 
+the end of the sequence.
+
+
+B. How LSTM Solved the Problem
+=================================
+LSTM uses 3 gates to handle the memory and training across long sequences:
+1- Forget Gate: this decides what to discard from the old words
+2- Input Gate: this decides what to store from the current new information
+3- Output Gate: this decides what part of the memory to output at each step
+
+
+C. LSTM Model Performance:
+============================
+-> Accuracy = 83% 
+-> Macro avg F1-score = 84%
+-> Weighted avg F1-score = 83%
+-> the class with the highest precision is 'Storage' which equals 91%
+-> the class with the lowest precision is 'Miscellaneous' which equals 76%
+-> the class with the highest recall is 'Purchase' which equals 93%
+-> the class with the lowes recall is 'Administrative rights' which equals 69%
+-> the class with the highest f1-score is 'Storage' which equals 89%
+-> the class with the lowes f1-score is 'Administrative rights' which equals 76%
+this means the best class that the model performs on is 'Storage' and the worst class is 'Administrative rights'
+
+
+D. LSTM vs the Best Model From Phase 1
+=========================================
+-> the best model from phase 1 is the logistic regression trained on TF-IDF, with accuracy = 85 %
+-> LSTM accuracy = 83%
+the 2% difference suggests that for this dataset, 
+keyword based features are strong enough. LSTM's 
+advantage would be more pronounced on longer or more 
+complex texts where word order and context matter more, and also the LSTM may beat the model from phase 1 with more tuning

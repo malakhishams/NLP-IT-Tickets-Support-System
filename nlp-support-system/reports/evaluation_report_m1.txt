@@ -1,0 +1,39 @@
+A. comparison between the two models
+---------------------------------------
+1- the TF-IDF Model: 
+
+= the model got an accuracy of 85%
+
+= the lowest f1-score is with class 'Administrative rights' which equals 77%
+= the highest f1 - score is with ' Purchase ' which equals 92%
+that means the best class the model performa on is 'purchase' and the worst one is 'Administrative rights'
+
+= the highest precision is with ' Purchase' class which equals 96%
+= the lowest precision is with 'Miscellaneous ' and 'Hardware' classes which equals 80%
+
+= the highest recall is with ' Purchase ' and 'Hardware' classes which equals 88%
+= the lowest recall is with 'Administrative rights' classes which equals 67%
+
+2- the Word2Vec Model:
+
+= the model got an accuracy of 57%
+
+= the smallest f1-score is with class 'Internal Project' which equals 36%
+= the highest f1 - score is with ' Hardware' which equals 62%
+that means the best class the model performs on is 'Hardware' and the worst one is 'Internal Project'
+
+= the highest precision is with ' Purchase' class which equals 78%
+= the lowest precision is with 'HR Support ' class which equals 48%
+
+= the highest recall is with ' HR Support ' class which equals 73%
+= the lowest recall is with ' Purchase ' classes which equals 27%
+ 
+Final insight: The overall performance of the TF-IDF model is better, acuracy is much higher and the range of all metrics is higher
+the difference in performance can be explained by the fact that TF-IDF captures keyword frequency which is very effective for short, domain-specific text, while Word2Vec's averaged vectors lose important distinguishing terms
+
+#################################################################################################################
+
+B. Problems and Risks
+----------------------------
+= The classes of the data are imbalanced, which results in bad model result and makes it biased towards the big classes
+= Deploying the model as it is is a risk, it needs to rebalance the data and tune the word2vec again and check for better results
