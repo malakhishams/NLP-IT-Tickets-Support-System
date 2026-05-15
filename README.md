@@ -237,7 +237,7 @@ Open `Transformer_QA.ipynb` and run all cells.
 
 ## 📬 Connect With Me
 
-[LinkedIn](https://linkedin.com/in/yourprofile) | [GitHub](https://github.com/yourusername)
+[LinkedIn](www.linkedin.com/in/malakhisham-) | [GitHub](https://github.com/malakhishams)
 
 ---
 
