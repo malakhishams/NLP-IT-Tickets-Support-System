@@ -205,7 +205,7 @@ from Hugging Face Transformers library.
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/it-support-nlp.git
+git clone https://github.com/malakhishams/it-support-nlp.git
 cd it-support-nlp
 ```
 
@@ -237,7 +237,7 @@ Open `Transformer_QA.ipynb` and run all cells.
 
 ## 📬 Connect With Me
 
-[LinkedIn](www.linkedin.com/in/malakhisham-) | [GitHub](https://github.com/malakhishams)
+[LinkedIn](https://www.linkedin.com/in/malakhisham-) | [GitHub](https://github.com/malakhishams)
 
 ---
 
